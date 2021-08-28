@@ -10,14 +10,62 @@
 
         {% block title %}
 
-      DecryptHer
+          DecryptHer
 
         {% endblock %}
 
     </title>
 </head>
 <body>
-    <h1>Hey all</h1>
+    <section class="nav-bar">
+        <div class="nav-container">
+           
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="{% url 'index' %}">Home</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    
+                    <li>
+                        <a href="#">Blogs</a>
+                        <ul class="nav-dropdown">
+                            <h1>Hello</h1>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <a href="#!">Explore</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <h1>helloeoe</h1>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% url 'AppLogin:profile' %}">{{ user.username }}</a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'AppLogin:logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{% url 'AppLogin:signup' %}">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'AppLogin:signin' %}">Login</a>
+                    </li>
+
+                    {% endif %}
+
+                </ul>
+
+            </nav>
+        </div>
+    </section>
+
     <div class="containermain">
         <div class="main">
 
@@ -27,5 +75,29 @@
 
         </div>
     </div>
+
 </body>
-</html>
+<script>
+    (function ($) {
+        $(function () {
+            $('nav ul li a:not(:only-child)').click(function (e) {
+                $(this).siblings('.nav-dropdown').toggle();
+                $('.dropdown').not($(this).siblings()).hide();
+                e.stopPropagation();
+            });
+            $('html').click(function () {
+                $('.nav-dropdown').hide();
+            });
+            $('#nav-toggle').click(function () {
+                $('nav ul').slideToggle();
+            });
+            $('#nav-toggle').on('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    })(jQuery);
+
+</script>
+
+    </html>
+  
