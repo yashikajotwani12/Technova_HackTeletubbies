@@ -1,0 +1,31 @@
+
+.chapters-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chapter-div {
+    background-color: #D09BB5;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.custom-btn{
+  display: inline-block;
+  background-color: #fdfdfd;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+  background-image: linear-gradient(top, #f4f1ee, #fff);
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);		
+  transition: all .1s linear;
+  margin: 10px;
+  transform: translate(0);
+}
+
+.custom-btn:hover {
+    transform: translate(-4px, -2px)
+}
