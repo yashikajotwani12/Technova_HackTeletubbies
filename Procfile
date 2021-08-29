@@ -1,0 +1,1 @@
+web gunicorn DecryptHer.wsgi --log-file -
