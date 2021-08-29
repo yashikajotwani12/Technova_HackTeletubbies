@@ -80,3 +80,145 @@ nav .brand-logo{
 .hard-card {
     background-color: #B8E8FD;
 }
+
+
+.profile-container{
+    /* padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
+    margin-bottom: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 2rem 2rem;
+    border-radius: 10px;
+   
+}
+.navbar{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.nav-bar{
+    height: 70px;
+}
+  /* .profile-container h2{
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  } */
+  .profile-container .profile-card p{
+    font-size: 20px;
+    margin: 5px;
+
+  }
+
+  
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    float: left;
+    position: relative;
+  
+  }
+  .nav-list li a{
+      margin-top: 0.5rem;
+
+  }
+  nav ul li a,
+  nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    /* background: #783b3bb8; */
+    color: #19123c;
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 21px;
+  
+  }
+  nav ul li a:hover,
+  nav ul li a:visited:hover {
+    background: #f34fc4;
+    color: #000000;
+  }
+  nav ul li a:not(:only-child):after,
+  nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+  }
+  nav ul li ul li {
+    min-width: 190px;
+  }
+  nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  
+  .nav-dropdown {
+    position: absolute;
+    background: #FF00B8;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 100;
+  }
+  
+  .mainbasecontainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .mainbasecontainer .form{
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
+    padding: 2rem;
+    border-radius: 12px;
+    background:#fe4cb1e3;
+
+  }
+  .mainbasecontainer h2{
+    font-size: 2rem;
+      color: white;
+      font-weight: bold;
+  }
+  .mainbasecontainer button{
+    margin: 2rem 2rem;
+    align-items: center;
+  }
+  .enter{
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin: 5rem 8rem;
+    
+  }
+  .addprofilepic,.userchangeprofile{
+    padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+      height: 100vh;
+  }
+  .addprofilepicbox,.userchangeprofilebox,.profile-card,.passwordchangebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 27rem;
+    background: #ff4acd;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 5px rgb(255 74 205 / 72%);
+  }

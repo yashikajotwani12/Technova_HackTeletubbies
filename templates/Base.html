@@ -42,20 +42,19 @@
                     {% if user.is_authenticated %}
                     
                     <li>
-                        <a href="#">Blogs</a>
-                        <ul class="nav-dropdown">
-                            <h1>Hello</h1>
-                        </ul>
+                        <a href="#">News</a>
+                       
+                         
+                      
+                    </li>
+                    <li>
+                        <a href="#">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="#">CrytoBot</a>
                     </li>
                    
-                    <li>
-                        <a href="#!">Explore</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <h1>helloeoe</h1>
-                            </li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="{% url 'AppLogin:profile' %}">{{ user.username }}</a>
                     </li>

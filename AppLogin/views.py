@@ -11,7 +11,7 @@ from AppLogin.forms import SignUpForm,UserProfileChange,ProfilePic
 # Create your views here.
 def sign_up(request):
     form = SignUpForm()
-    registered =False
+    registered = False
     if request.method =='POST':
         form = SignUpForm(data=request.POST)
         if form.is_valid():
