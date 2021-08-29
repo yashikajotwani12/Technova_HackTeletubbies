@@ -47,7 +47,6 @@ nav .brand-logo{
 .cards-div .card{
     transform-style: preserve-3d;
     color: #19123c;
-    cursor:pointer;
     margin: 10px;
     padding: 10px;
     text-align: center;

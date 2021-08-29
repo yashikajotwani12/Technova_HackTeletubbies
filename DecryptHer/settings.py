@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Home',
     'AppLogin',
     'crispy_forms',
+    'Quiz'
 
 ]
 

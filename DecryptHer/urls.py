@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from . import views
+from Quiz import views as qz
 from django.urls import path,include
 
 urlpatterns = [
@@ -22,5 +23,7 @@ urlpatterns = [
     path('home/',include('Home.urls')),
     path('',views.index,name='index'),
     path('account/',include('AppLogin.urls')),
+    path('chapters/chapter-content/', qz.chapterContent, name= 'chapter-content'),
+    path('chapters/', qz.chapters, name= 'chapters'),
    
 ]
