@@ -3,8 +3,9 @@ body {
     font-family: "righteous";
 }
 
-nav li{
-display: inline-block;
+nav{
+display: flex;
+/* flex-direction: column; */
 }
 
 nav img{
@@ -15,6 +16,10 @@ nav img{
 nav .brand-logo{
     color: #FF00B8;
     font-size:30px;
+}
+
+.nav-right{
+  float: left;
 }
 
 .welcome-section {

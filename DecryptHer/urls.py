@@ -23,7 +23,7 @@ urlpatterns = [
     path('home/',include('Home.urls')),
     path('',views.index,name='index'),
     path('account/',include('AppLogin.urls')),
-    path('chapters/chapter-content/', qz.chapterContent, name= 'chapter-content'),
+    path('chapters/chapter-content/<int:id>/', qz.chapterContent, name= 'chapter-content'),
     path('chapters/', qz.chapters, name= 'chapters'),
    
 ]
