@@ -29,18 +29,20 @@
     <section class="nav-bar">
         <div class="nav-container">
            
-            <nav >
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <ul class="nav-list">
-                    <li>
+            <nav  >
+                <div class="nav-left">
+                     <span>
                     <img src={%static "images/finNova.png" %} alt="logo">
                     <span class="brand-logo">FinNova</span>
-                    </li>
-                    <li>
+                    </span>
+                </div>
+                <div class="nav-list nav-right">                    
+                    <span>
                         <a href="{% url 'index' %}">Home</a>
-                    </li>
+                    </span>
                     {% if user.is_authenticated %}
                     
+<<<<<<< HEAD
                     <li>
                         <a href="{% url 'Home:news'%}">News</a>
                        
@@ -51,26 +53,39 @@
                     <li>
                         <a href="{% url 'Home:cryptobot' %}">CrytoBot</a>
                     </li>
+=======
+                    <span>
+                        <a href="#">News</a>
+                       
+                    </span>
+                    <span>
+                        <a href="#">Quiz</a>
+                    </span>
+                    <span>
+                        <a href="#">CrytoBot</a>
+                    </span>
+>>>>>>> b5b6d914a643daeaa73a55c446e863477bee4674
                    
                     
-                    <li>
+                    <span>
                         <a href="{% url 'AppLogin:profile' %}">{{ user.username }}</a>
-                    </li>
+                    </span>
 
-                    <li>
+                    <span>
                         <a href="{% url 'AppLogin:logout' %}">Logout</a>
-                    </li>
+                    </span>
                     {% else %}
-                    <li>
+                    <span>
                         <a href="{% url 'AppLogin:signup' %}">Sign Up</a>
-                    </li>
-                    <li>
+                    </span>
+                    <span>
                         <a href="{% url 'AppLogin:signin' %}">Login</a>
-                    </li>
+                    </span>
 
                     {% endif %}
 
-                </ul>
+
+                </div>
 
             </nav>
         </div>
@@ -80,7 +95,7 @@
     
      {% comment %} {% include "./Home/navbar.html" %} {% endcomment %}
 
-        <div class="main">
+        <div class="main pt-2">
 
             {% block body_block %}
 

@@ -3,9 +3,18 @@ body {
     font-family: "righteous";
 }
 
-nav li{
-display: inline-block;
+nav{
+padding-left: 100px;
+padding-right: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
+.nav-right{
+  display: flex;
+}
+
 
 nav img{
     width: 100px;
@@ -15,6 +24,10 @@ nav img{
 nav .brand-logo{
     color: #FF00B8;
     font-size:30px;
+}
+
+.nav-right{
+  float: left;
 }
 
 .welcome-section {
@@ -65,6 +78,11 @@ nav .brand-logo{
     object-fit: cover;
 }
 
+.cards-div .card a {
+  text-decoration: none;
+  color: #19123c;
+}
+
 .cards-div .card:hover {
     transform: scale(1.1);
 }
@@ -100,9 +118,7 @@ nav .brand-logo{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.nav-bar{
-    height: 70px;
-}
+
   /* .profile-container h2{
     color: white;
     margin-bottom: 2rem;
@@ -115,23 +131,8 @@ nav .brand-logo{
   }
 
   
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    float: left;
-    position: relative;
-  
-  }
-  .nav-list li a{
-      margin-top: 0.5rem;
-
-  }
-  nav ul li a,
-  nav ul li a:visited {
+  nav a,
+  nav a:visited {
     display: block;
     padding: 0 20px;
     line-height: 70px;
@@ -142,20 +143,20 @@ nav .brand-logo{
     font-size: 21px;
   
   }
-  nav ul li a:hover,
-  nav ul li a:visited:hover {
+  nav a:hover,
+  nav a:visited:hover {
     background: #f34fc4;
     color: #000000;
   }
-  nav ul li a:not(:only-child):after,
-  nav ul li a:visited:not(:only-child):after {
+  nav a:not(:only-child):after,
+  nav a:visited:not(:only-child):after {
     padding-left: 4px;
     content: ' ▾';
   }
-  nav ul li ul li {
+  /* nav ul li ul li {
     min-width: 190px;
-  }
-  nav ul li ul li a {
+  } */
+  nav  a {
     padding: 15px;
     line-height: 20px;
   }
@@ -181,8 +182,16 @@ nav .brand-logo{
     box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
     padding: 2rem;
     border-radius: 12px;
-    background:#fe4cb1e3;
+    background:#D09BB5;
+    margin-top: -20%;
+  }
 
+  .mainbasecontainer .form input{
+   width: 100%;
+   outline: none;
+   border: none;
+   border-radius: 50px;
+   padding: 10px;
   }
   .mainbasecontainer h2{
     font-size: 2rem;

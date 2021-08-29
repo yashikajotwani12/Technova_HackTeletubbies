@@ -4,22 +4,28 @@
 {% block body_block %}
 
 <div class="container">
-  <div class="row justify-content-around align-items-center">
-    <div class="col-6">
+  <div class="mt-5">
+  
+    <div class="col-12 chapter-content-div">
+      <h2 class="m-3"> {{chapter.name}}</h2>
+
+      <div class="chapter-image">
       <img
-        src="https://cdn3d.iconscout.com/3d/premium/thumb/indian-business-woman-standing-besides-dollar-symbol-2869234-2384337.png"
+        src={{chapter.image}}
         alt=""
       />
-    </div>
-
-    <div class="col-6 chapter-div">
-      <h2 class="m-3"> Chapter 1</h2>
+    </div> 
 
       <div class="mt-5">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quia ipsum quaerat, harum temporibus maiores corporis explicabo deserunt dicta sed voluptate? Officiis provident impedit saepe, corrupti odit labore ipsam omnis.</p>
+        <p>{{chapter.description | linebreaks}}</p>
       </div>
 
-      <a href="#" class="custom-btn"> Proceed to Quiz</a>
+      <div class="chapter-footer d-flex align-items-center mt-4">
+
+     <iframe width="560" height="315" src="{{chapter.video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+      <a href="{{chapter.quiz}}" class="custom-btn custom-btn--pink ml-4"> Proceed to Quiz</a>
+      </div>
     </div>
   </div>
 </div>
