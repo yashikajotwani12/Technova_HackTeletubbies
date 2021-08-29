@@ -42,16 +42,14 @@
                     {% if user.is_authenticated %}
                     
                     <li>
-                        <a href="#">News</a>
+                        <a href="{% url 'Home:news'%}">News</a>
                        
-                         
-                      
                     </li>
                     <li>
                         <a href="#">Quiz</a>
                     </li>
                     <li>
-                        <a href="#">CrytoBot</a>
+                        <a href="{% url 'Home:cryptobot' %}">CrytoBot</a>
                     </li>
                    
                     

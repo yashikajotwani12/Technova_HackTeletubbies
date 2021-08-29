@@ -222,3 +222,12 @@ nav .brand-logo{
     border-radius: 15px;
     box-shadow: 0 0 5px 5px rgb(255 74 205 / 72%);
   }
+  .newsbox{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    border-radius: 1rem 2rem;
+    background: #9a82ce;
+    padding: 3rem;
+  }

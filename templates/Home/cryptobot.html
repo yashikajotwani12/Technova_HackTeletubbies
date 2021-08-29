@@ -1,0 +1,53 @@
+{% extends 'Base.html' %}
+
+
+{% load static %}
+{% block title %} News {% endblock title %}
+
+{% block body_block %}
+<style>
+    #bot {
+border-radius:10px;
+  color:white;
+  background-color: #C2A6FF;
+  min-height:400px;
+  width:100%;
+  
+  /* Add background image */
+  /*background-image: url("");*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  /* Center the content vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bot > div {
+border-radius:20px;
+  max-width: 640px;
+  /* padding: top right bottom left */
+  padding: 16px 40px 16px 40px;
+
+  /*a in rgba is the alpha channel that specifies the opacity for a color*/
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /* Define the text color in this div box*/
+  color: white;
+}
+    </style>
+     <section id="bot">
+        <div>
+            <h2>Query Here</h2>
+            <h3><p>Hi I am here to help you with the appflow </p><p>& general Finance Queries</p></h3>
+            <p>or Chat with our <a href='https://t.me/fncryptobot'><font color="pink">Telegram Bot</a></p>
+            <iframe
+allow="microphone;"
+width="350"
+height="430"
+src="https://console.dialogflow.com/api-client/demo/embedded/e74fe0a1-f7e8-4f20-a1d5-2337948ef6f2">
+</iframe>
+
+{% endblock body_block %}
