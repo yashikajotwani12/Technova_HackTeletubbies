@@ -43,14 +43,14 @@
                     {% if user.is_authenticated %}
                     
                     <span>
-                        <a href="#">News</a>
+                        <a href={% url 'Home:news' %}>News</a>
                        
                     </span>
                     <span>
                         <a href="#">Quiz</a>
                     </span>
                     <span>
-                        <a href="#">CryptoBot</a>
+                        <a href={% url 'Home:cryptobot' %}>CryptoBot</a>
                     </span>
                    
                     
