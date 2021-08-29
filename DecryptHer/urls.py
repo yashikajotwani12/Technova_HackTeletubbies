@@ -24,6 +24,8 @@ urlpatterns = [
     path('',views.index,name='index'),
     path('account/',include('AppLogin.urls')),
     path('chapters/chapter-content/<int:id>/', qz.chapterContent, name= 'chapter-content'),
-    path('chapters/', qz.chapters, name= 'chapters'),
+    path('chapters/crypto', qz.crypto_chapters, name= 'crypto_chapters'),
+    path('chapters/earn', qz.earn_chapters, name= 'earn_chapters'),
+    path('chapters/trade', qz.trade_chapters, name= 'trade_chapters'),
    
 ]

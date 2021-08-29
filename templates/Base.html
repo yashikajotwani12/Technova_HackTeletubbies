@@ -30,14 +30,13 @@
         <div class="nav-container">
            
             <nav  >
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-                <div class="nav-list nav-right">
-                    <span>
+                <div class="nav-left">
+                     <span>
                     <img src={%static "images/finNova.png" %} alt="logo">
                     <span class="brand-logo">FinNova</span>
                     </span>
-                    
-                    <div>
+                </div>
+                <div class="nav-list nav-right">                    
                     <span>
                         <a href="{% url 'index' %}">Home</a>
                     </span>
@@ -46,8 +45,6 @@
                     <span>
                         <a href="#">News</a>
                        
-                         
-                      
                     </span>
                     <span>
                         <a href="#">Quiz</a>
@@ -74,8 +71,6 @@
 
                     {% endif %}
 
-                    </div>
-
 
                 </div>
 
@@ -87,7 +82,7 @@
     
      {% comment %} {% include "./Home/navbar.html" %} {% endcomment %}
 
-        <div class="main">
+        <div class="main pt-2">
 
             {% block body_block %}
 

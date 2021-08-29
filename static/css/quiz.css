@@ -60,6 +60,7 @@ object-fit:cover;
 }
 
 .custom-btn--pink{
+    margin-left: 20%;
     background-image: -webkit-linear-gradient(top, #D09BB5, #D09bb5) !important; 
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px rgba( '#do9bb5' , 0.5), inset 0px -3px 1px 1px rgba(204,198,197,.5);	
 }
