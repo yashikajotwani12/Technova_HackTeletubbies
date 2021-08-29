@@ -3,9 +3,9 @@
  {% block title %} Home {% endblock title %} 
 {% block body_block %}
 
-<div class="container">
-  <div class="row justify-content-around align-items-center">
-    <div class="col-6">
+<div class="container chapter-container">
+  <div class="chapters row">
+    <div class="chapter-list-img col-6">
       <img
         src="https://cdn3d.iconscout.com/3d/premium/thumb/indian-business-woman-standing-besides-dollar-symbol-2869234-2384337.png"
         alt=""
@@ -16,12 +16,15 @@
       <h2 class="m-3">Bitcoin</h2>
 
       <div class="mt-5 chapters-list">
+      {% for item in chapter_list%}
+          <a href='chapter-content/{{item.id}}' class="custom-btn"> {{forloop.counter}} {{item.name}}  </a>
+      {% endfor %}
+        
+        {% comment %} <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
         <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
         <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
         <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
-        <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
-        <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
-        <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a>
+        <a href={% url 'chapter-content' %} class="custom-btn"> 1. Chapter 1 </a> {% endcomment %}
       </div>
     </div>
   </div>
